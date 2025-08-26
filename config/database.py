@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     DB_PASSWORD: str = '123456'
 
     class Config:
+        extra = "allow"
         env_file = ".env"
 
 
@@ -21,6 +22,7 @@ class RedisSettings(BaseSettings):
     REDIS_PASSWORD: str = None
 
     class Config:
+        extra = "allow"
         env_file = ".env"
 
 
